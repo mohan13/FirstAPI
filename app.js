@@ -64,7 +64,15 @@ app.use("/form", (res, req) => {
 app.use("/service", (res, req) => {
   res.status(200).json([
     {
-      headline: "Form",
+      headline: "services",
+    },
+  ]);
+});
+//events
+app.use("/events", (res, req) => {
+  res.status(200).json([
+    {
+      headline: "Events",
     },
   ]);
 });
