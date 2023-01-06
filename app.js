@@ -44,7 +44,30 @@ app.use("/home", (req, res) => {
     },
   ]);
 });
-
+//Gallery
+app.use("/gallery", (res, req) => {
+  res.status(200).json([
+    {
+      headline: "Gallery",
+    },
+  ]);
+});
+//Form
+app.use("/form", (res, req) => {
+  res.status(200).json([
+    {
+      headline: "Form",
+    },
+  ]);
+});
+//service
+app.use("/service", (res, req) => {
+  res.status(200).json([
+    {
+      headline: "Form",
+    },
+  ]);
+});
 //for about
 app.use("/about", (req, res) => {
   res.status(200).json([
@@ -64,4 +87,4 @@ app.use("/contact", (req, res) => {
 });
 // server setUp
 app.listen(process.env.PORT);
-console.log("Server is running at port"+process.env.PORT);
+console.log("Server is running at port" + process.env.PORT);
