@@ -63,5 +63,5 @@ app.use("/contact", (req, res) => {
   ]);
 });
 // server setUp
-app.listen(5000);
-console.log("Server is running at port 5000");
+app.listen(process.env.PORT);
+console.log("Server is running at port"+process.env.PORT);
