@@ -37,10 +37,53 @@ app.use("/doc", swaggerUiExpress.serve, swaggerUiExpress.setup(swaggerDocs));
 app.use("/home", (req, res) => {
   res.status(200).json([
     {
-      headline: "Hi ! I'm Mohan",
-      title:
-        "A Frontend and Backend focused Web Developer building the Frontend of Websites that leads to the success of the overall product",
-      Image: "For image",
+      banner: {
+        headline: "HOTEL & RESORT",
+        title: "Welcome to Roberto",
+      },
+      aboutUs: {
+        headline: "ABOUT US",
+        title: "Welcome to Roberto Hotel Luxury",
+        description:
+          "With over 340 hotels worldwide, NH Hotel Group offers a wide variety of hotels catering for a perfect stay no matter where your destination.",
+      },
+      testimonials: [
+        {
+          name: "Downey Sarah",
+          post: "CEO Deercreative",
+          comment:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+        {
+          name: "Downey Sarah",
+          post: "CEO Deercreative",
+          comment:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+        {
+          name: "Downey Sarah",
+          post: "CEO Deercreative",
+          comment:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+      ],
+      entertainment: [
+        {
+          headline: "Racing Bike",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Quisque egestas diam in arcu cursus euismod.",
+        },
+        {
+          headline: "Racing Bike",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Quisque egestas diam in arcu cursus euismod.",
+        },
+        {
+          headline: "Racing Bike",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Quisque egestas diam in arcu cursus euismod.",
+        },
+      ],
     },
   ]);
 });
@@ -65,11 +108,58 @@ app.use("/service", (res, req) => {
   res.status(200).json([
     {
       headline: "services",
+      price: "125$",
+      duration: "Day",
+      size: "30 ft",
+      capacity: "Max person 5",
+      Bed: "King Beds",
+      services: "Wifi,Television,Bathroom",
+    },
+    {
+      headline: "services",
+      price: "125$",
+      duration: "Day",
+      size: "30 ft",
+      capacity: "Max person 5",
+      Bed: "King Beds",
+      services: "Wifi,Television,Bathroom",
+    },
+    {
+      headline: "services",
+      price: "125$",
+      duration: "Day",
+      size: "30 ft",
+      capacity: "Max person 5",
+      Bed: "King Beds",
+      services: "Wifi,Television,Bathroom",
+    },
+  ]);
+});
+//blogs
+app.use("/blogs", (req, res) => {
+  res.status(200).json([
+    {
+      time: "Jan 02, 2019",
+      title: "Learn How to Motivitate Yourself",
+      paragraph:
+        "How many free autoresponders have you tried? And how many emails did you get through using them?",
+    },
+    {
+      time: "Jan 02, 2019",
+      title: "What if Let You Run the Hubble",
+      paragraph:
+        "How many free autoresponders have you tried? And how many emails did you get through using them?",
+    },
+    {
+      time: "Jan 02, 2019",
+      title: "Six Packs Abs The Big Picture",
+      paragraph:
+        "How many free autoresponders have you tried? And how many emails did you get through using them?",
     },
   ]);
 });
 //events
-app.use("/events", (res, req) => {
+app.use("/events", (req, res) => {
   res.status(200).json([
     {
       headline: "Events",
