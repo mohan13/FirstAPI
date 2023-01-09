@@ -37,14 +37,20 @@ app.use("/doc", swaggerUiExpress.serve, swaggerUiExpress.setup(swaggerDocs));
 app.use("/home", (req, res) => {
   res.status(200).json([
     {
-      headline: "HOTEL & RESORT",
-      title: "Welcome to Roberto",
+      id: "1",
+      banner: {
+        headline: "HOTEL & RESORT",
+        title: "Welcome to Roberto",
+      },
     },
     {
-      headline: "ABOUT US",
-      title: "Welcome to Roberto Hotel Luxury",
-      description:
-        "With over 340 hotels worldwide, NH Hotel Group offers a wide variety of hotels catering for a perfect stay no matter where your destination.",
+      id: "2",
+      aboutUs: {
+        headline: "ABOUT US",
+        title: "Welcome to Roberto Hotel Luxury",
+        description:
+          "With over 340 hotels worldwide, NH Hotel Group offers a wide variety of hotels catering for a perfect stay no matter where your destination.",
+      },
     },
     {
       testimonials: [
